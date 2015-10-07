@@ -57,8 +57,8 @@ bool FEclipseSourceCodeAccessor::OpenSolution()
 
 bool FEclipseSourceCodeAccessor::OpenFileAtLine(const FString& FullPath, int32 LineNumber, int32 ColumnNumber)
 {
-	const FString FileWithLine = FString::Printf(TEXT("%s:%i "), *FullPath, LineNumber);
-	TArray<FString> Files(FileWithLine);
+	TArray<FString> Files;
+	Files.Emplace(FString::Printf(TEXT("%s:%i "), *FullPath, LineNumber));
 	return OpensourceFiles(Files);
 }
 
