@@ -15,7 +15,7 @@
 		{
 			"Name" : "EclipseSourceCodeAccess",
 			"Type" : "Developer",
-			"WhitelistPlatforms" : [ "Linux", "Windows" ],
+			"WhitelistPlatforms" : [ "Linux", "Win32", "Win64", "Mac" ],
 			"LoadingPhase" : "PreDefault"
 		}
 	]

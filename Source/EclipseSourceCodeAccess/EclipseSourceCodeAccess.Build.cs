@@ -4,14 +4,19 @@ namespace UnrealBuildTool.Rules
 	{
 		public EclipseSourceCodeAccess(TargetInfo Target)
 		{
-		 	PrivateDependencyModuleNames.AddRange(
+			PrivateDependencyModuleNames.AddRange(
 				new string[]
 				{
 					"Core",
+					"SourceCodeAccess",
 					"DesktopPlatform",
-					"SourceCodeAccess"
 				}
 			);
+
+			if (UEBuildConfiguration.bBuildEditor)
+			{
+				PrivateDependencyModuleNames.Add("HotReload");
+			}
 		}
 	}
 }
