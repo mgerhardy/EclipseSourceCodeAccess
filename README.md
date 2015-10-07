@@ -7,6 +7,8 @@ Now rebuild the engine (or better, build the plugin).
 
 Add the following to the file ```Engine/Config/Linux/LinuxEngine.ini```
 
+(Keep in mind that ```Linux``` in that filepath might change to whatever OS you are using)
+
 ```
 [/Script/SourceCodeAccess.SourceCodeAccessSettings]
 PreferredAccessor=EclipseSourceCodeAccessor
