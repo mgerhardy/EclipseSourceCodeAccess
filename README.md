@@ -18,4 +18,4 @@ In addition to that you also can export the environment variable ```UE4_ECLIPSE_
 This plugin should work on Linux, Win32, Win64 and Mac.
 
 ## Note
-Based on the [qt creator source access implementation](https://github.com/fire/QtCreatorSourceCodeAccess)
+Based on the [qt creator source access implementation](https://github.com/fire/QtCreatorSourceCodeAccess) and the included code lite source accessor.
