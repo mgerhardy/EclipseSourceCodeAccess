@@ -59,7 +59,7 @@ bool FEclipseSourceCodeAccessor::OpenFileAtLine(const FString& FullPath, int32 L
 {
 	TArray<FString> Files;
 	Files.Emplace(FString::Printf(TEXT("%s:%i "), *FullPath, LineNumber));
-	return OpensourceFiles(Files);
+	return OpenSourceFiles(Files);
 }
 
 bool FEclipseSourceCodeAccessor::OpenSourceFiles(const TArray<FString>& AbsoluteSourcePaths)
