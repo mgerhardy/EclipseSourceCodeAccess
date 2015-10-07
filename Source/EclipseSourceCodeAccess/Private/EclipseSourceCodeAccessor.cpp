@@ -47,7 +47,7 @@ bool FEclipseSourceCodeAccessor::OpenSolution()
 	UE_LOG(LogEclipseAccessor, Warning, TEXT("FEclipseSourceCodeAccessor::OpenSolution: %s %s"), *EclipsePath, *Solution);
 
 	FProcHandle Proc = FPlatformProcess::CreateProc(*EclipsePath, *Solution, true, false, false, nullptr, 0, nullptr, nullptr);
-	if(Proc.IsValid())
+	if (Proc.IsValid())
 	{
 		FPlatformProcess::CloseProc(Proc);
 		return true;
@@ -76,7 +76,7 @@ bool FEclipseSourceCodeAccessor::OpenSourceFiles(const TArray<FString>& Absolute
 		Args.Append(NewSourcePath);
 	}
 	FProcHandle Proc = FPlatformProcess::CreateProc(*EclipsePath, *Args, true, false, false, nullptr, 0, nullptr, nullptr);
-	if(Proc.IsValid())
+	if (Proc.IsValid())
 	{
 		FPlatformProcess::CloseProc(Proc);
 		return true;
