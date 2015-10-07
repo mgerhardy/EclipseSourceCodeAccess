@@ -98,7 +98,7 @@ void FEclipseSourceCodeAccessor::Tick(const float DeltaTime)
 {
 }
 
-bool FEclispeSourceCodeAccessor::CanRunEclipse(FString& OutPath) const
+bool FEclipseSourceCodeAccessor::CanRunEclipse(FString& OutPath) const
 {
 	// TODO This might be not a good idea to find an executable.
 	OutPath = TEXT("/usr/bin/eclipse");
