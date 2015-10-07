@@ -75,7 +75,7 @@ bool FEclipseSourceCodeAccessor::OpenSourceFiles(const TArray<FString>& Absolute
 		const FString NewSourcePath = FString::Printf(TEXT("\"%s\" "), *SourcePath);
 		Args.Append(NewSourcePath);
 	}
-	FProcHandle Proc = FPlatformProcess::CreateProc(*EclipsePath, *Solution, true, false, false, nullptr, 0, nullptr, nullptr);
+	FProcHandle Proc = FPlatformProcess::CreateProc(*EclipsePath, *Args, true, false, false, nullptr, 0, nullptr, nullptr);
 	if(Proc.IsValid())
 	{
 		FPlatformProcess::CloseProc(Proc);
