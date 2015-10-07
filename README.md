@@ -7,6 +7,8 @@ Based on the [qt creator source access implementation](https://github.com/fire/Q
 ## Instructions
 Clone this repository to ```Engine/Plugins/Developer``` in your UnrealEngine directory.
 
+Now rebuild the engine (or better, build the plugin).
+
 Add the following to the file ```Engine/Config/Linux/LinuxEngine.ini```
 
 ```
