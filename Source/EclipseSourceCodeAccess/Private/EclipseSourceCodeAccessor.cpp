@@ -13,6 +13,11 @@ DEFINE_LOG_CATEGORY_STATIC(LogEclipseAccessor, Log, All);
 
 // http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.platform.doc.isv%2Freference%2Fmisc%2Fruntime-options.html
 
+void FEclipseSourceCodeAccessor::RefreshAvailability()
+{
+	return;
+}
+
 bool FEclipseSourceCodeAccessor::CanAccessSourceCode() const
 {
 	return true;

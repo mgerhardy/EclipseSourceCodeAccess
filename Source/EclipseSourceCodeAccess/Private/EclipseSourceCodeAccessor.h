@@ -14,6 +14,12 @@ private:
 	/** Tests if eclipse is present and returns path to it */
 	bool CanRunEclipse(FString& OutPath) const;
 public:
+
+	/**
+	* 
+	*/
+	virtual void RefreshAvailability() override;
+
 	/**
 	 * Can we access source code.
 	 */
